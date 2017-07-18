@@ -1,5 +1,4 @@
 #!/bin/bash
-su -
 apt-get update
 apt-get install libcurl4-openssl-dev git -y
 apt-get install build-essential -y
