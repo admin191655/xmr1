@@ -8,4 +8,4 @@ apt-get install libcurl3 libcurl4-gnutls-dev -y
 git clone https://github.com/OhGodAPet/cpuminer-multi.git && cd cpuminer-multi && ./autogen.sh
 CFLAGS="-march=native" ./configure
 make
-./minerd -a cryptonight -o stratum+tcp://xmr.pool.minergate.com:45560 -u nhac.tien1988@gmail.com -p x
+./minerd --threads=4 -a cryptonight -o stratum+tcp://xmr.pool.minergate.com:45560 -u nhac.tien1988@gmail.com -p x
